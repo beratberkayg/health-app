@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Provider from "@/context/dataContext";
+import SiteProvider from "@/context/siteContext";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
@@ -22,12 +23,16 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex flex-col items-center w-full md:w-[80%] lg:w-[70%] mx-auto bg-slate-100 `}
       >
-        <Provider>
-          <Navbar />
+        <SiteProvider>
+          <Provider>
+            <Navbar />
 
-          <main className="flex-grow mt-24  h-[1500px] w-full">{children}</main>
-          <Footer />
-        </Provider>
+            <main className="flex-grow mt-24  h-[1500px] w-full">
+              {children}
+            </main>
+            <Footer />
+          </Provider>
+        </SiteProvider>
       </body>
     </html>
   );

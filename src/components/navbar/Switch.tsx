@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { SiteContext } from "@/context/siteContext";
+import { useContext, useState } from "react";
 
 const Switcher = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const value = useContext(SiteContext);
 
   const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
+    value?.setIsChecked(!value.isChecked);
   };
 
   return (
@@ -15,12 +16,12 @@ const Switcher = () => {
         <input
           type="checkbox"
           className="sr-only"
-          checked={isChecked}
+          checked={value?.isChecked}
           onChange={handleCheckboxChange}
         />
         <span
-          className={`flex items-center space-x-[6px] rounded py-2 px-[9px] md:px-[18px] text-sm font-medium ${
-            !isChecked
+          className={`flex items-center space-x-[6px] rounded py-2 px-[9px] md:px-[18px] text-sm font-medium  ${
+            !value?.isChecked
               ? "text-primary bg-green-400 rounded-full transition-all duration-500"
               : "text-body-color text-gray-500"
           }`}
@@ -29,7 +30,7 @@ const Switcher = () => {
         </span>
         <span
           className={`flex items-center space-x-[6px] rounded py-2 px-[9px] md:px-[18px] text-sm font-medium ${
-            isChecked
+            value?.isChecked
               ? "text-primary bg-green-400 rounded-full transition-all duration-500 "
               : "text-body-color text-gray-500"
           }`}
