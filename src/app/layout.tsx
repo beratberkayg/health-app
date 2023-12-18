@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col items-center w-full md:w-[80%] lg:w-[70%] mx-auto bg-slate-100 `}
+        className={`${inter.className} flex flex-col items-center w-full md:w-[80%] lg:w-[70%] mx-auto bg-slate-200 `}
       >
         <SiteProvider>
           <Provider>

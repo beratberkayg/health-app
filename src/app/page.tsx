@@ -1,4 +1,6 @@
 "use client";
+import Banner from "@/components/home/Banner";
+import Hero from "@/components/home/Hero";
 import { DataContext } from "@/context/dataContext";
 import { SiteContext } from "@/context/siteContext";
 import { useContext } from "react";
@@ -10,12 +12,7 @@ export default function Home() {
 
   return (
     <div className="">
-      {data.map((item, i) => (
-        <div key={i}>
-          {item.name}
-          <img className="w-10 h-10" src={item.img} alt="" />
-        </div>
-      ))}
+      <Hero />
       {value?.isChecked && <div>ürünler</div>}
     </div>
   );

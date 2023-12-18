@@ -1,7 +1,7 @@
 "use client";
 
 import { SiteContext } from "@/context/siteContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 const Switcher = () => {
   const value = useContext(SiteContext);
