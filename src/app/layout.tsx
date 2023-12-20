@@ -27,9 +27,7 @@ export default function RootLayout({
           <Provider>
             <Navbar />
 
-            <main className="flex-grow mt-24  h-[1500px] w-full">
-              {children}
-            </main>
+            <main className="flex-grow   w-full">{children}</main>
             <Footer />
           </Provider>
         </SiteProvider>

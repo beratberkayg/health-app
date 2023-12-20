@@ -8,7 +8,11 @@ import { data } from "@/data/data";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -23,7 +27,7 @@ const Hero = () => {
         {data.map((item, i) => (
           <SwiperSlide key={i} className="flex items-center justify-center ">
             <motion.img
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.3 }}
               className=" "
               src={item.img}
               alt={item.name}
@@ -31,7 +35,7 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

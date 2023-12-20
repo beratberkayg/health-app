@@ -1,5 +1,6 @@
 "use client";
 
+import Banner from "@/components/home/Banner";
 import Hero from "@/components/home/Swiper";
 import Title from "@/components/home/Title";
 import { DataContext } from "@/context/dataContext";
@@ -12,8 +13,8 @@ export default function Home() {
   const value = useContext(SiteContext);
 
   return (
-    <div className="">
-      <div className=" flex justify-between items-center flex-wrap md:flex-nowrap">
+    <div className="flex flex-col mt-20 md:mt-10">
+      <div className=" rounded-lg flex justify-between items-center flex-wrap md:flex-nowrap">
         <div className="w-full">
           <Title />
         </div>
@@ -21,7 +22,7 @@ export default function Home() {
           <Hero />
         </div>
       </div>
-
+      <Banner />
       {value?.isChecked && <div>ürünler</div>}
     </div>
   );

@@ -23,7 +23,7 @@ const Menu = () => {
             initial={{ y: -500, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            exit={{ y: -500, opacity: 0, transition: { duration: 0.5 } }}
+            exit={{ y: -500, opacity: 0 }}
             className="absolute right-0 top-16 bg-white drop-shadow-xl shadow-xl w-[200px] h-[120px] rounded-xl px-2 py-3 flex flex-col gap-2"
           >
             <div className="w-full hover:bg-slate-200 h-1/2 rounded-md flex items-center gap-2 p-2 text-g cursor-pointer">
