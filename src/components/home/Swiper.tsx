@@ -1,0 +1,38 @@
+import React from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import "swiper/css/pagination";
+import { data } from "@/data/data";
+import { motion } from "framer-motion";
+const Hero = () => {
+  return (
+    <div>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        grabCursor
+        className="w-[300px] md:w-[350px] lg:w-[400px] rounded-xl  flex items-center justify-center"
+      >
+        {data.map((item, i) => (
+          <SwiperSlide key={i} className="flex items-center justify-center ">
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              className=" "
+              src={item.img}
+              alt={item.name}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default Hero;

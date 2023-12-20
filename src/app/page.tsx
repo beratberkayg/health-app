@@ -1,6 +1,7 @@
 "use client";
-import Banner from "@/components/home/Banner";
-import Hero from "@/components/home/Hero";
+
+import Hero from "@/components/home/Swiper";
+import Title from "@/components/home/Title";
 import { DataContext } from "@/context/dataContext";
 import { SiteContext } from "@/context/siteContext";
 import { useContext } from "react";
@@ -12,7 +13,15 @@ export default function Home() {
 
   return (
     <div className="">
-      <Hero />
+      <div className=" flex justify-between items-center flex-wrap md:flex-nowrap">
+        <div className="w-full">
+          <Title />
+        </div>
+        <div className="w-full">
+          <Hero />
+        </div>
+      </div>
+
       {value?.isChecked && <div>ürünler</div>}
     </div>
   );

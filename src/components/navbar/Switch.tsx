@@ -12,7 +12,7 @@ const Switcher = () => {
 
   return (
     <>
-      <label className="relative inline-flex cursor-pointer select-none items-center justify-center rounded-full bg-white p-1  drop-shadow-xl shadow-xl shadow-inner! ">
+      <label className="relative inline-flex cursor-pointer select-none items-center justify-center rounded-full bg-white p-1  drop-shadow-xl shadow-xl shadow-inner!">
         <input
           type="checkbox"
           className="sr-only"
