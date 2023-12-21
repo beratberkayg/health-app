@@ -6,12 +6,13 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import { data } from "@/data/data";
 import { motion } from "framer-motion";
-const Hero = () => {
+const Swipe = () => {
   return (
     <motion.div
       initial={{ scale: 0, opacity: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
+      className="relative -top-10 md:top-0"
     >
       <Swiper
         spaceBetween={30}
@@ -39,4 +40,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Swipe;

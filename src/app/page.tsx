@@ -1,8 +1,6 @@
 "use client";
 
-import Banner from "@/components/home/Banner";
-import Hero from "@/components/home/Swiper";
-import Title from "@/components/home/Title";
+import Hero from "@/components/home/Hero";
 import { DataContext } from "@/context/dataContext";
 import { SiteContext } from "@/context/siteContext";
 import { useContext } from "react";
@@ -13,16 +11,32 @@ export default function Home() {
   const value = useContext(SiteContext);
 
   return (
-    <div className="flex flex-col mt-20 md:mt-10">
-      <div className=" rounded-lg flex justify-between items-center flex-wrap md:flex-nowrap">
-        <div className="w-full">
-          <Title />
-        </div>
-        <div className="w-full">
-          <Hero />
+    <div className="border border-black">
+      <Hero />
+      <div>
+        {/* <div className=" w-full h-[500px] relative  ">
+        <Title />
+        <div className="absolute -z-20 w-full h-full left-0 top-0 md:top-10 flex  justify-around items-center ">
+          <img
+            className=" hidden md:block md:w-64 lg:w-96 "
+            src="./img/panax.png"
+            alt=""
+          />
+          <img
+            className="relative -top-20 hidden md:block md:w-64 lg:w-96"
+            src="./img/d1.png"
+            alt=""
+          />
+          <img className="w-96 md:hidden" src="./img/panax.png" alt="" />
+          <img
+            className="hidden md:block md:w-64 lg:w-96"
+            src="./img/reishi.png"
+            alt=""
+          />
         </div>
       </div>
-      <Banner />
+      <Banner /> */}
+      </div>
       {value?.isChecked && <div>ürünler</div>}
     </div>
   );
