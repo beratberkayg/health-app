@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/home/Hero";
+import Maps from "@/components/home/Maps";
 import { DataContext } from "@/context/dataContext";
 import { SiteContext } from "@/context/siteContext";
 import { useContext } from "react";
@@ -11,7 +12,7 @@ export default function Home() {
   const value = useContext(SiteContext);
 
   return (
-    <div className="">
+    <div className="flex flex-col">
       <Hero />
       <div className="relative -top-40 rounded-lg bg-green-400 w-[98%] mx-auto flex flex-wrap gap-1 md:flex-nowrap md:max-h-[600px]">
         <div className="w-full md:w-1/2">
@@ -47,7 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {value?.isChecked && <div>ürünler</div>}
+      <Maps />
     </div>
   );
 }
