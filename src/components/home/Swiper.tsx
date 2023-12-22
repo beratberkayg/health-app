@@ -29,12 +29,13 @@ const Swipe = () => {
           <SwiperSlide key={i} className="flex items-center justify-center ">
             <motion.img
               whileHover={{ scale: 1.3 }}
-              className=" scale-125"
+              className="w-96 h-96"
               src={item.img}
               alt={item.name}
             />
           </SwiperSlide>
         ))}
+        <div className=" w-72 h-72 rounded-full absolute  -z-50 bg-green-400 left-[4%] bottom-10"></div>
       </Swiper>
     </motion.div>
   );
