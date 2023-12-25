@@ -49,6 +49,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <Maps />
       <Contact />
     </div>

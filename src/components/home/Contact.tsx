@@ -1,8 +1,8 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div className="w-[98%] mx-auto rounded-lg bg-green-500 relative -mt-16 mb-5 flex flex-col justify-center items-center py-5 px-2 gap-3 z-10 overflow-hidden">
+    <div className="w-[98%] mx-auto rounded-lg bg-green-400 relative -mt-16 mb-5 flex flex-col justify-center items-center py-5 px-2 gap-3 z-10 overflow-hidden">
       <div className="text-center text-3xl">Bizimle İletişime Geçin</div>
 
       <div className="form-container w-full md:w-2/3">
@@ -40,8 +40,15 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className="w-[100px] h-[100px] absolute bg-black rounded-full left-10 top-10 -z-50"></div>
-      <div className="w-[100px] h-[100px] absolute bg-black rounded-full right-10 bottom-10 -z-50"></div>
+      <div className="-z-50 absolute bottom-0 left-0">
+        <motion.img
+          initial={{ opacity: 0.5, y: 300 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 5 }}
+          src="./svg.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
