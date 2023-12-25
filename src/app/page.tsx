@@ -1,5 +1,6 @@
 "use client";
 
+import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Maps from "@/components/home/Maps";
 import { DataContext } from "@/context/dataContext";
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <div className="relative -top-40 rounded-lg bg-green-400 w-[98%] mx-auto flex flex-wrap gap-1 md:flex-nowrap md:max-h-[600px]">
+      <div className="relative -top-40 rounded-lg bg-green-400 w-[98%] mx-auto flex flex-wrap gap-1 md:flex-nowrap md:max-h-[500px] mt-5">
         <div className="w-full md:w-1/2">
           <img
             className="w-full h-[330px] md:h-full rounded-t-lg md:rounded-t-none md:rounded-l-lg md:rounded-tl-lg"
@@ -49,6 +50,7 @@ export default function Home() {
         </div>
       </div>
       <Maps />
+      <Contact />
     </div>
   );
 }

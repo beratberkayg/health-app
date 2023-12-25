@@ -22,10 +22,10 @@ const Swiper3 = () => {
       className=""
     >
       {data.map((item, i) => (
-        <SwiperSlide key={i} className="flex items-center justify-center ">
+        <SwiperSlide key={i} className="flex items-center justify-center">
           <motion.img
             whileHover={{ scale: 1.3 }}
-            className=" "
+            className=""
             src={item.img}
             alt={item.name}
           />
