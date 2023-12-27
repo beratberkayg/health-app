@@ -5,6 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 const Menu = () => {
   const [show, setShow] = useState<boolean>(false);
 
