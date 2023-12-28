@@ -8,7 +8,7 @@ const Product = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="mt-[100px] min-h-screen  rounded-lg flex flex-wrap justify-evenly px-3 gap-3"
+      className="mt-[100px] min-h-screen  rounded-lg flex flex-wrap gap-5 md:gap-9 justify-center"
     >
       {data.map((item, i) => (
         <Item key={i} item={item} />

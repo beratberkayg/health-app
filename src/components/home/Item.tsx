@@ -1,12 +1,16 @@
 import { dataType } from "@/types/type";
+import Image from "next/image";
 import React from "react";
 
 const Item = ({ item }: { item: dataType }) => {
   return (
-    <div className="w-full md:w-[45%] lg:w-[32%] h-[430px] rounded-md bg-green-400 px-7  flex  justify-center flex-col">
-      <img className="w-full " src={item.img} alt="" />
-
-      <div className="text-2xl font-medium text-center">{item.name}</div>
+    <div className="card bg-green-400 rounded-[8px] w-[300px] md:w-[47%] lg:w-[300px] lg:h-[400px] h-[400px] overflow-hidden ">
+      <div className="circle"></div>
+      <div className="circle "></div>
+      <div className="card-inner">
+        <img src={item.img} alt="" />
+        <h2 className="text-center text-xl font-medium">{item.name}</h2>
+      </div>
     </div>
   );
 };
