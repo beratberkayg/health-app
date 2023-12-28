@@ -25,7 +25,7 @@ const Hero = () => {
           <Swipe />
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 300 }}
+          initial={{ opacity: 0, y: 600 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="hidden md:block"
