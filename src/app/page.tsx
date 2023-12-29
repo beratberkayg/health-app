@@ -37,7 +37,10 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="md:w-1/2 flex justify-evenly flex-col px-3 gap-3 py-3 lg:text-lg">
+            <div
+              id="hakkımızda"
+              className="md:w-1/2 flex justify-evenly flex-col px-3 gap-3 py-3 lg:text-lg"
+            >
               <h2 className="text-2xl lg:text-4xl font-medium text-center">
                 Pendik Doğal Sağlık
               </h2>

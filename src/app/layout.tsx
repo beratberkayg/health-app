@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Condensed } from "next/font/google";
+import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import Provider from "@/context/dataContext";
 import SiteProvider from "@/context/siteContext";

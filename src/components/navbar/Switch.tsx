@@ -1,6 +1,7 @@
 "use client";
 
 import { SiteContext } from "@/context/siteContext";
+import Link from "next/link";
 import { useContext } from "react";
 
 const Switcher = () => {
@@ -28,7 +29,8 @@ const Switcher = () => {
         >
           Anasayfa
         </span>
-        <span
+        <Link
+          href={"/product"}
           className={`flex items-center space-x-[6px] rounded py-2 px-[9px] md:px-[18px] text-sm font-medium ${
             value?.isChecked
               ? "text-primary bg-green-400 rounded-full transition-all duration-500 "
@@ -36,7 +38,7 @@ const Switcher = () => {
           }`}
         >
           Ürünler
-        </span>
+        </Link>
       </label>
     </>
   );
