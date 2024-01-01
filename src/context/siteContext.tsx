@@ -13,17 +13,17 @@ interface DataContextProps {
   children: ReactNode;
 }
 
-interface valueType {
-  isChecked: boolean;
-  setIsChecked: Dispatch<SetStateAction<boolean>>;
+export interface valueType {
+  toogle: boolean;
+  setToogle: Dispatch<SetStateAction<boolean>>;
 }
 
 const SiteProvider: React.FC<DataContextProps> = ({ children }) => {
-  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [toogle, setToogle] = useState<boolean>(false);
 
   const value: valueType = {
-    isChecked,
-    setIsChecked,
+    toogle,
+    setToogle,
   };
   return <SiteContext.Provider value={value}>{children}</SiteContext.Provider>;
 };

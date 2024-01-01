@@ -3,9 +3,7 @@
 import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Maps from "@/components/home/Maps";
-import Product from "@/components/home/Product";
 import { DataContext } from "@/context/dataContext";
-import { SiteContext } from "@/context/siteContext";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 

@@ -1,13 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { ValueType, motion } from "framer-motion";
+import { useContext, useEffect, useState } from "react";
 import Hamburger from "./Hamburger";
 import Link from "next/link";
 import Links from "./Links";
-import { useRouter } from "next/router";
+import { SiteContext, valueType } from "@/context/siteContext";
 
 const Navbar = () => {
+  const val = useContext(SiteContext);
+
   const [navbar, setNavbar] = useState<boolean>(false);
   useEffect(() => {
     navbarChange();
@@ -43,10 +45,14 @@ const Navbar = () => {
       }
      `}
     >
-      <Link href={"/"} className="text-3xl cursor-pointer font-medium ">
+      <Link
+        onClick={() => val?.setToogle(false)}
+        href={"/"}
+        className="text-3xl cursor-pointer font-medium "
+      >
         Doğal Sağlık
       </Link>
-      <Links />
+      <Links val={val} />
       <Hamburger />
     </motion.div>
   );
