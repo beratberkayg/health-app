@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} flex flex-col min-h-screen items-center w-full md:w-[80%] lg:w-[70%] mx-auto bg-[#ECF9FF]  `}
+        className={`${roboto.className} flex flex-col min-h-screen items-center w-full md:w-[80%] lg:w-[70%] mx-auto bg-[#E6FFFD] `}
       >
         <SiteProvider>
           <Provider>

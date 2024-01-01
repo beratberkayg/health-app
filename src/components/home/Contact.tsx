@@ -2,10 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div
-      id="iletisim"
-      className="w-[98%] mx-auto rounded-lg bg-green-400 relative -mt-16 mb-5 flex flex-col justify-center items-center py-5 px-2 gap-3 z-10 overflow-hidden"
-    >
+    <div className="w-[98%] mx-auto rounded-lg bg-green-400 relative -mt-16 mb-5 flex flex-col justify-center items-center py-5 px-2 gap-3 z-10 overflow-hidden">
       <div className="text-center text-3xl">Bizimle İletişime Geçin</div>
 
       <div className="form-container w-full md:w-2/3">
