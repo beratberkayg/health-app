@@ -31,9 +31,7 @@ const Contact = () => {
               id="textarea"
               name="textarea"
               placeholder="Bu kısmı boş bırakabilirsiniz."
-            >
-              {" "}
-            </textarea>
+            ></textarea>
           </div>
           <button type="submit" className="form-submit-btn">
             Gönder

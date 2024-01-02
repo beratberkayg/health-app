@@ -3,13 +3,9 @@
 import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Maps from "@/components/home/Maps";
-import { DataContext } from "@/context/dataContext";
-import { useContext } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const data = useContext(DataContext);
-
   return (
     <motion.div
       initial={{ opacity: 0.3 }}

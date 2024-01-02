@@ -40,19 +40,19 @@ const Navbar = () => {
       }}
       className={`fixed  flex justify-between items-center w-full px-1 md:w-[80%] lg:w-[70%] mt-5 z-50    ${
         navbar
-          ? "bg-green-500 -mt-1 py-2 px-2 rounded-b text-black"
-          : "text-green-500 md:border-b md:border-blue-500 md:pb-2"
+          ? "bg-green-500 -mt-0 py-2 px-2 rounded-b text-black"
+          : "text-green-500 "
       }
      `}
     >
       <Link
         onClick={() => val?.setToogle(false)}
         href={"/"}
-        className="text-3xl cursor-pointer font-medium "
+        className="text-4xl cursor-pointer font-medium "
       >
         Doğal Sağlık
       </Link>
-      <Links val={val} />
+      <Links />
       <Hamburger />
     </motion.div>
   );
