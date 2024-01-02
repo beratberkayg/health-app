@@ -15,6 +15,7 @@ export default function Home() {
     >
       <div className="flex flex-col">
         <Hero />
+
         <div
           id="hakkımızda"
           className="relative -top-40 rounded-lg bg-green-400 w-[98%] mx-auto flex flex-wrap gap-1 md:flex-nowrap md:max-h-[500px] mt-5 "
@@ -26,7 +27,6 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div id="hakkımızda"></div>
           <div className="md:w-1/2 flex justify-evenly flex-col px-3 gap-3 py-3 lg:text-lg">
             <h2 className="text-2xl lg:text-4xl font-medium text-center">
               Pendik Doğal Sağlık
@@ -53,9 +53,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="iletisim"></div>
+
         <Maps />
-        <Contact />
+        <div id="iletisim"></div>
       </div>
     </motion.div>
   );

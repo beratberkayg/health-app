@@ -1,16 +1,29 @@
 import Link from "next/link";
+import { FaUser } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { AiFillCaretRight } from "react-icons/ai";
 
 const Links = () => {
   return (
-    <div className="hidden md:flex md:justify-between md:items-center w-[50%] text-2xl font-medium mx-2">
-      <Link className="hover:scale-125" href={"/product"}>
-        Ürünler
+    <div className="hidden md:flex md:justify-between md:items-center md:gap-3 w-[60%]  text-2xl font-medium mx-2  ">
+      <Link
+        className="lg:hover:scale-125 flex justify-center items-center hover:text-blue-500 transition-all"
+        href={"/product"}
+      >
+        <AiFillCaretRight /> Ürünler
       </Link>
-      <Link className="hover:scale-125" href={"/#hakkımızda"}>
-        Hakkımızda
+      <Link
+        className="lg:hover:scale-125 flex justify-center items-center gap-1 hover:text-blue-500 transition-all"
+        href={"/#hakkımızda"}
+      >
+        <FaUser /> Hakkımızda
       </Link>
-      <Link className="hover:scale-125" href={"/#iletisim"}>
-        İletişim
+      <Link
+        className="lg:hover:scale-125 flex justify-center items-center gap-1 hover:text-blue-500 transition-all"
+        href={"/#iletisim"}
+      >
+        <FaPhoneAlt /> İletişim
       </Link>
     </div>
   );
