@@ -40,7 +40,7 @@ const Navbar = () => {
       }}
       className={`fixed  flex justify-between items-center w-full px-1 md:w-[80%] lg:w-[70%] mt-5 z-50  ${
         navbar
-          ? "bg-green-500 -mt-1 py-2 px-2 rounded-b text-black"
+          ? "bg-green-500 mt-0 py-2 px-2 rounded-b text-black"
           : "text-green-500 "
       }
      `}
