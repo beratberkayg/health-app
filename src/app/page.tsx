@@ -18,7 +18,7 @@ export default function Home() {
 
         <div
           id="hakkımızda"
-          className="relative -top-40 rounded-lg bg-green-400 w-[98%] mx-auto flex flex-wrap gap-1 md:flex-nowrap md:max-h-[500px] mt-5 "
+          className="relative -top-40 rounded-lg bg-green-500 w-[98%] mx-auto flex flex-wrap gap-1 md:flex-nowrap md:max-h-[600px] mt-5 "
         >
           <div className="w-full md:w-1/2">
             <img

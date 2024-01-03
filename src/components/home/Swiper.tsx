@@ -36,7 +36,7 @@ const Swipe = () => {
           </SwiperSlide>
         ))}
 
-        <div className=" w-72 h-72 rounded-full absolute  -z-50 bg-green-400 left-[3%] bottom-12"></div>
+        <div className=" w-72 h-72 rounded-full absolute  -z-50 bg-green-500 left-[3%] bottom-12"></div>
       </Swiper>
     </motion.div>
   );

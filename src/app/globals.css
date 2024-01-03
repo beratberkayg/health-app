@@ -10,6 +10,17 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+
 .form-container {
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid transparent;
@@ -130,6 +141,12 @@
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  scale: 1.01;
+  rotate: 1;
 }
 
 .card-inner {

@@ -4,20 +4,21 @@ import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
-import { Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { data } from "@/data/data";
 
 const Swiper3 = () => {
   return (
     <Swiper
+      navigation={true}
       grabCursor
       slidesPerView={3}
       spaceBetween={30}
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
       className=""
     >
       {data.map((item, i) => (
