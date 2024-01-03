@@ -1,6 +1,9 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import Social from "./Social";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import Link from "next/link";
 const Maps = () => {
   return (
     <div className="w-[98%] mx-auto rounded-lg bg-green-500 relative -top-20 flex flex-wrap gap-1 md:gap-0">
@@ -10,11 +13,12 @@ const Maps = () => {
           Bahçelievler, Adnan Menderes Blv. No:10 /A, 34893 Pendik/İstanbul
         </div>
         <a
-          className="text-blue-500 text-3xl font-medium flex items-center justify-center gap-3"
+          className="text-blue-500 text-3xl font-medium flex items-center justify-center gap-3 hover:scale-110"
           href="tel:+905545875797"
         >
           <FaPhoneAlt /> 0554 587 57 97
         </a>
+        <Social />
       </div>
       <div className="w-full md:w-1/2 h-[300px] ">
         <iframe

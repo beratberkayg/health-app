@@ -53,9 +53,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <Maps />
         <div id="iletisim"></div>
+        <Maps />
       </div>
     </motion.div>
   );
